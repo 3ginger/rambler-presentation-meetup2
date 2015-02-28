@@ -1,0 +1,24 @@
+default:
+  - dev
+  - watch
+
+server:
+  - 'connect'
+  - default
+
+dev:
+  - base
+  - prepare
+
+prepare:
+  - 'concurrent:prepareResources'
+  - 'concat:js'
+  - 'concat:css'
+  - 'autoprefixer'
+
+base:
+  - 'concurrent:prepareTask'
+
+prod:
+  - dev
+  - 'concurrent:production'

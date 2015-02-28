@@ -1,0 +1,26 @@
+@import 'nib'
+@import 'fonts'
+@import 'debug'
+
+*, *:after, *:before
+  box-sizing border-box
+  position: relative
+
+.content
+  margin: 0
+
+
+/*browser settings*/
+html
+  #browse-happy
+    display none
+  &.no-svg
+  &.no-canvas
+    #browse-happy
+      display block
+    #content
+      display none
+  &.svg
+  &.canvas
+    #content
+      display block

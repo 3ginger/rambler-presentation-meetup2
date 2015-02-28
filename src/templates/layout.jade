@@ -1,0 +1,58 @@
+- var site_name = 'www.3ginger.com'
+- var site_developer = 'German Gurov'
+- var debug_mode = true
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        title=site_name
+
+        meta(name='description' content='3ginger portfolio and blog')
+        meta(name='author' content=site_developer)
+        meta(name='type' content='site')
+
+        meta(property='og:title' content='')
+        meta(property='og:description' content='')
+        meta(property='og:url' content='')
+        meta(property='og:image' content='')
+
+        if debug_mode
+            link(rel='stylesheet' href='css/app.css')
+            script(src='js/modernizr.js')
+        else
+            link(rel='stylesheet' href='css/app.min.css')
+            script(src='js/modernizr.min.js')
+
+        //head section
+        block head
+
+    body
+        #content
+            //header section
+            header
+                block header
+
+            //main section
+            main
+                block main
+
+            //footer section
+            footer
+                block footer
+
+        include browser_alert
+
+        //script section
+        if debug_mode
+            include debug_panel
+            script(src='js/app.js')
+        else
+            script(src='js/app.min.js')
+
+        block scripts
+
+
+
