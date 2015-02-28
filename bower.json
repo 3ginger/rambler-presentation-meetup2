@@ -1,0 +1,22 @@
+{
+  "name": "Standart Template 3G",
+  "version": "0.2.0",
+  "authors": [
+    "Gurov German <3gingermail@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "d3": "~3.4.6",
+    "underscore": "~1.6.0",
+    "modernizr": "~2.8.2",
+    "jquery": "~2.1.1",
+    "normalize.css": "~3.0.2"
+  }
+}
