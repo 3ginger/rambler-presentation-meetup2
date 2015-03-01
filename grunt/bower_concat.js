@@ -3,6 +3,9 @@ module.exports = {
         dest: 'build/_bower.js',
         cssDest: 'build/_bower.css',
         exclude: [
+            'jeet',
+            'rupture-by-jenius',
+            'typographic',
             'modernizr',
             'd3'
         ],
@@ -17,6 +20,9 @@ module.exports = {
         dest: 'build/_bower.js',
         cssDest: 'build/_bower.css',
         exclude: [
+            'jeet',
+            'rupture-by-jenius',
+            'typographic',
             'modernizr',
             'jquery'
         ],

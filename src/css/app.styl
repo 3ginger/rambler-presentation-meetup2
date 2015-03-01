@@ -1,26 +1,18 @@
 @import 'nib'
+@import '../../bower/jeet/stylus/jeet/index'
+@import '../../bower/typographic/typographic/index'
+@import '../../bower/rupture-by-jenius/rupture/index'
+
 @import 'fonts'
+@import 'global'
 @import 'debug'
 
-*, *:after, *:before
-  box-sizing border-box
-  position: relative
+t-presets()
 
-.content
+#content
   margin: 0
-
-
-/*browser settings*/
-html
-  #browse-happy
-    display none
-  &.no-svg
-  &.no-canvas
-    #browse-happy
-      display block
-    #content
-      display none
-  &.svg
-  &.canvas
-    #content
-      display block
+  h1
+    width: 500px
+    color: red
+    +below('m')
+      width: 200px

@@ -6,7 +6,8 @@ module.exports = {
     },
     fonts: {
         expand: true,
-        src: 'src/fonts/**',
+        cwd: 'src/',
+        src: 'fonts/**',
         dest: 'web/'
     }
 };
