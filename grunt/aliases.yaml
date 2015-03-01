@@ -19,6 +19,6 @@ prepare:
 base:
   - 'concurrent:prepareTask'
 
-prod:
+pub:
   - dev
   - 'concurrent:production'
