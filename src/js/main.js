@@ -1,7 +1,7 @@
 //add debug panel
 (function(){
+    var dp = document.getElementById('debug-panel');
     function toggleDebugPanel() {
-        var dp = document.getElementById('debug-panel');
         if(dp.classList.contains('active')) {
          dp.classList.remove('active');
         } else {
@@ -13,6 +13,18 @@
         if (e.keyCode == 73 && e.ctrlKey && !e.shiftKey) {
             toggleDebugPanel();
         }
+    };
+
+    function _addMessage(message) {
+        if(dp) {
+            var e = document.createElement('pre');
+            e.innerHTML = message;
+            dp.appendChild(e);
+        }
+    }
+
+    window.debug = {
+        addMessage:_addMessage
     };
 })();
 
@@ -65,3 +77,6 @@
             clearTimeout(id);
         };
 }());
+
+
+debug.addMessage('Hello debug');
