@@ -9,5 +9,11 @@ module.exports = {
         cwd: 'src/',
         src: 'fonts/**',
         dest: 'web/'
+    },
+    data: {
+        expand: true,
+        cwd: 'src/',
+        src: 'data/**',
+        dest: 'web/'
     }
 };

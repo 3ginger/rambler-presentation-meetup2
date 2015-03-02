@@ -3,7 +3,7 @@ module.exports = {
         files: [{
             expand: true,
             cwd: 'src/',
-            src: ['img/*.svg'],
+            src: ['img/**/*.svg'],
             dest: 'web/'
         }]
     },

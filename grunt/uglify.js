@@ -5,6 +5,11 @@ module.exports = {
         }
     },
     app: {
+        options:{
+            compress: {
+                drop_console: true
+            }
+        },
         files: {
             'web/js/app.min.js': 'web/js/app.js'
         }
