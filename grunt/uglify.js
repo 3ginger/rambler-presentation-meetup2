@@ -7,7 +7,7 @@ module.exports = {
     app: {
         options:{
             compress: {
-                drop_console: true
+                drop_console: false
             }
         },
         files: {

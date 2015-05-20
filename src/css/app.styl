@@ -12,3 +12,112 @@ t-headers(helvetica)
 
 #content
   margin: 0
+
+.disabled
+    display none
+html
+    font-size 16px
+    +below('l')
+        font-size 12px
+main
+    position fixed
+    width 100%
+    height 100%
+    .change-slide.button
+        position fixed
+        bottom 1rem
+        padding 1rem
+        background-color: white
+        border-radius 4px
+        cursor pointer
+        transition all .3s
+        &:hover
+            background-color: purple
+            color white
+        &.left
+            left 1rem
+        &.right
+            right 1rem
+    .window
+        position fixed
+        top 50%
+        left 1rem
+        right 1rem
+        padding 1rem
+        background-color rgba(white, .7)
+        transform translate(0, -50%)
+        h1
+            text-align: center
+        &.about
+        &.thanks
+            transform translate(0, 0)
+        &.about
+            top 1rem
+        &.thanks
+            top initial
+            bottom 5rem
+        &.choose-tech
+            h3
+                text-align: center
+                margin 1rem 0
+        &.titled
+            h3
+                text-align: right
+        &.iterative-nature
+            h1
+                text-align: center
+            p
+                margin 3rem 0 1rem 0
+            .square
+                display inline-block
+                height 5rem
+                border 1px solid white
+                width 100%
+                background-color: orange
+            .dec
+            .acs
+                font-size 0
+                margin-bottom 1rem
+            .acs
+                > *
+                    width 50%
+                    &:first-child
+                        background-color: purple
+                    &:last-child
+                        background-color: green
+            .dec
+                > *
+                    width: (100%/3)
+                    background-color: purple
+                    .part
+                        width 100%
+                        background-color: green
+                        position absolute
+                        top 0
+                        left 0
+                        border none
+                    &:nth-child(1) .part
+                        height 10%
+                    &:nth-child(2) .part
+                        height 70%
+                    &:nth-child(3) .part
+                        height 50%
+    .layer
+        width 100%
+        height 100%
+        position fixed
+        &.words
+            background-color: lightgray
+            .word
+                transition all .3s
+                position absolute
+                font-weight bold
+                font-size 2rem
+                text-shadow 2px 2px lightgray
+                &.selected
+                    width 100%
+                    text-align center
+        &.fader
+            background-color: gray;
+            opacity: 0.6;
+            transition all .4s

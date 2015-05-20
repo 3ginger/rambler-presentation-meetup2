@@ -7,8 +7,8 @@ module.exports = {
 
     prepareTask:[
         'clean:tmp',
-        'bower_concat:jquery',
-        //'bower_concat:d3',
+        //'bower_concat:jquery',
+        'bower_concat:d3',
         'jshint'
     ],
     prepareResources:[
