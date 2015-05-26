@@ -1,7 +1,8 @@
 #rambler-presentation-meetup2
 
 
-The presentation for the second meatup in Rambler. The topic of the presentation is "Refactoring".
+The presentation for the second meatup in Rambler. The topic of the presentation is "Refactoring". Maked with Stylus, D3js, Grunt.
+
 [Russian article about presentation](http://3ginger.com/entry/presentation-about-refactoring)
 
 
